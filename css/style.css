@@ -1,5 +1,10 @@
+/*estos 3 elementos son super importantes ya que formatean
+las caracteristicas del navegador*/
 *{
+    box-sizing: border-box;
+    padding: 0%;
     margin: 0%;
+
 }
 /*ESTILOS DE LAS PSEUDOCLASES
 .main-nav{
@@ -33,3 +38,16 @@
     content: "|";
 }
 */
+
+/* ESTA PARTE DE ESTILO PERTENECE A LA CLASE MODELO DE CAJA
+   EN LA CUAL CONTEMPLAMOS LA PROPIEDAD BOX SIZING
+
+main{
+    width: 100%;
+    height: 500px;
+    border: 10px solid grey;
+    padding: 20px 35px;
+}
+*/
+
+
