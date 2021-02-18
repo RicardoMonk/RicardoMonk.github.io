@@ -50,4 +50,14 @@ main{
 }
 */
 
+/* ESTA PARTE MUESTRA COMO HACER QUE SE HEREDE EL ESTILO DE UN
+   HIJO A UN PADRE CON INHERTI
+html{
+    font-family: Helvetica;
+    font-size: 75%;
+}
 
+h1{
+    font-size: inherit;
+}
+*/
