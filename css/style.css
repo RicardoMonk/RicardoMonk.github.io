@@ -61,3 +61,28 @@ h1{
     font-size: inherit;
 }
 */
+
+
+h1 {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.nav{
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.nav li{
+    display: inline-block;
+}
+
+.nav a{
+    text-decoration: none;
+    color:maroon;
+    background-color: rgb(224, 221, 39);
+    border-radius: 4px;
+    padding: 8px;
+    
+}
+
