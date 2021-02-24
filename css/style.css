@@ -86,4 +86,7 @@ h1 {
     
 } */
 
-
+/* ESTA PARTE ES DE ADJACENT SIBLINGS - HRMANOS CERCANOS
+h2 + p {
+    color: red;
+} */
