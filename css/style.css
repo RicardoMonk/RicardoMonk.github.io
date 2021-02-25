@@ -4,8 +4,12 @@ las caracteristicas del navegador*/
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
-
 }
+
+html{
+    font-size: 62.5%;
+}
+
 /*ESTILOS DE LAS PSEUDOCLASES
 .main-nav{
     margin-top: 10px;
@@ -107,7 +111,7 @@ div  p {
 } 
 */
 
-/*EM UNITS
+/* EM UNITS
 .text-container{
     font-size: 1.5em;
 }
@@ -116,3 +120,10 @@ div  p {
     font-size: 1.5em;
 }
 */
+
+/* ESTA PARTE ES DE REM UNITS
+p{
+    font-size: 1rem;
+} */
+
+
