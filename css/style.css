@@ -10,7 +10,7 @@ html{
     font-size: 62.5%;
 }
 
-/*ESTILOS DE LAS PSEUDOCLASES
+/*ESTILOS DE LAS PSEUDOCLASES.
 .main-nav{
     margin-top: 10px;
     list-style: none;
@@ -126,4 +126,23 @@ p{
     font-size: 1rem;
 } */
 
+
+/*ESTA PARTE ES DE VH-VW  MIN-MAX W-H
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color:gainsboro;
+}
+
+section{
+    font-size: 1.6rem;
+    width: 80%;
+    min-width: 320px;  /*con este limitamos su encogimiento
+    max-width: 500px; /*con este limitamos su estiramiento
+    min-height: 300px;
+    background-color:white;
+    margin: 0 auto;
+
+}
+*/
 
