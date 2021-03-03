@@ -146,3 +146,46 @@ section{
 }
 */
 
+/* POSITION - absolut,relative,fixed,static,sticky
+
+.contenedor{
+    display: inline-block;
+
+}
+
+.caja-sup{
+background-color: greenyellow;
+border-radius: 2rem;
+display: inline-block;
+height: 10rem;
+width: 30rem;
+position: absolute;
+left: 34rem;
+top: 3rem;
+}
+
+h1{text-align: center;
+   color: ivory;
+   margin-top: 3.8rem;
+   font-family: Helvetica, sans-serif;
+}
+
+.caja-inf{
+    background-color:green;
+    border-radius: 1rem;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50rem;
+    width: 50rem;
+    margin-left: 24rem;
+    font-size: 1.6rem;
+}
+
+div p{
+    margin-top: 23rem;
+    padding: 0 4rem;
+    text-align: justify;
+}
+
+*/
+
