@@ -355,12 +355,22 @@ footer div{
 }
 */
 
+/*MAS DISPLAY:FLEX
 .container{
     border: .3rem solid black;
     display:flex;
     flex-wrap: wrap;
     justify-content:space-between;
     
+}
+
+.container2{
+    width: 100%
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: wrap;
+
+
 }
 
 .box{
@@ -390,4 +400,6 @@ footer div{
 
 .box6{
     background-color:slategrey;
-}
+}*/
+
+
