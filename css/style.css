@@ -9,6 +9,9 @@ las caracteristicas del navegador*/
 html{
     font-size: 62.5%;
 }
+body{
+    font-size: 1.6rem;
+}
 
 /*ESTILOS DE LAS PSEUDOCLASES.
 .main-nav{
@@ -310,3 +313,81 @@ footer div{
     padding: 2.1rem;
 }
 */
+
+/*DISPLAY:FLEX Y SUS CARACTERISTICAS COMO 
+    FLEX:WRAP, JUSTIFY-CONTEN, FLEX-WRAP, ALIGN-ITEMS, FLEX-DIRECTION,ALIGN-SELF
+
+.container{
+    border: .3rem solid black;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    
+}
+
+.box{
+    width: 10rem;
+    height: 10rem;
+}
+
+.box1{
+    background-color: mediumorchid;
+}
+
+.box2{
+    background-color:midnightblue;
+    }
+
+.box3{
+    background-color:orangered;
+    }
+
+.box4{
+    background-color:royalblue;
+    }
+
+.box5{
+    background-color:yellowgreen;
+    }
+
+.box6{
+    background-color:slategrey;
+}
+*/
+
+.container{
+    border: .3rem solid black;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    
+}
+
+.box{
+    width: 10rem;
+    height: 10rem;
+}
+
+.box1{
+    background-color: mediumorchid;
+}
+
+.box2{
+    background-color:midnightblue;
+    }
+
+.box3{
+    background-color:orangered;
+    }
+
+.box4{
+    background-color:royalblue;
+    }
+
+.box5{
+    background-color:yellowgreen;
+    }
+
+.box6{
+    background-color:slategrey;
+}
