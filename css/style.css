@@ -11,7 +11,10 @@ html{
 }
 body{
     font-size: 1.6rem;
+
 }
+
+
 
 /*ESTILOS DE LAS PSEUDOCLASES.
 .main-nav{
@@ -400,6 +403,45 @@ footer div{
 
 .box6{
     background-color:slategrey;
+}*/
+
+/*DISPLAY:FLEX MAS FLEX-WRAP, JUSTIFY CONTENT,ALIGN-ITEMS,FLEX-GROW Y FLEX BASIS
+main{
+    border: black solid 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 10rem;
+    height: 10rem;
+    flex-basis: 10rem;
+    flex-grow: 1;
+ 
+}
+
+.box1{
+    background-color: blue;
+}
+
+.box2{
+    background-color: brown;
+}
+
+.box3{
+    background-color: chartreuse;
+}
+
+.box4{
+    background-color: darkcyan;
+}
+
+.box5{
+    background-color: darkred;
+}
+
+.box6{
+    background-color:orange;
 }*/
 
 
