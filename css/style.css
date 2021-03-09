@@ -14,433 +14,101 @@ body{
 
 }
 
-
-
-/*ESTILOS DE LAS PSEUDOCLASES.
-.main-nav{
-    margin-top: 10px;
-    list-style: none;
-    padding-left: 0px;
-    background-color: #13a4a4;
-}
-
-.main-nav__item{
-    display:inline-block;
-}
-
-.main-nav__item a{
-    color: white;
-    padding: 5px;
-    border-radius: 2px;
-    text-decoration: none;
-}
- cuando usamos :clase es una seudo claso
- :hover es un estado del elemento
-.main-nav__item a:hover{
-    color: yellowgreen;
-}
-
-.main-nav__item a:active{color: tomato;}
-
- :: y esta es una seudo clase
-
-.main-nav__item a::after{
-    content: "|";
-}
-*/
-
-/* ESTA PARTE DE ESTILO PERTENECE A LA CLASE MODELO DE CAJA
-   EN LA CUAL CONTEMPLAMOS LA PROPIEDAD BOX SIZING
-
-main{
+header{
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    background-color: pink;
     width: 100%;
-    height: 500px;
-    border: 10px solid grey;
-    padding: 20px 35px;
-}
-*/
+    height: 6rem;
 
-/* ESTA PARTE MUESTRA COMO HACER QUE SE HEREDE EL ESTILO DE UN
-   HIJO A UN PADRE CON INHERTI
-html{
-    font-family: Helvetica;
-    font-size: 75%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
 h1{
-    font-size: inherit;
-}
-*/
-
-/* ESTA PARTE ES DE ESPECIFICIDAD EN SELECTORES CLASS 27-29
-h1 {
-    font-family:Arial, Helvetica, sans-serif;
+    flex: 2;
+    text-align: center;
 }
 
-.nav{
-    margin-top: 10px;
-    list-style: none;
-    padding-left: 0px;
-}
-
-.nav li{
-    display: inline-block;
-}
-
-.nav a{
+h1 a{
+    color: black;
     text-decoration: none;
-    color:maroon;
-    background-color: rgb(224, 221, 39);
-    border-radius: 4px;
-    padding: 8px;
-    
-} */
-
-/* ESTA PARTE ES DE ADJACENT SIBLINGS - HERMANOS CERCANOS
-h2 + p {
-    color: red;
-} */
-
-/* ESTA PARTE ES DE GENERAL SIBLINGS - HERMANOS GENERALES
-h2 ~ p{
-    color: red;
-} */
-
-/* ESTA PARTE ES DE CHILD - HIJO DIRECTO
-div > p {
-    color: red;
-} */
-
-/* ESTA PARTE ES DE DESCENDIENTES EL MAS USADO
-div  p {
-    color: red;
-} 
-*/
-
-/* EM UNITS
-.text-container{
-    font-size: 1.5em;
-}
-
-.text-container div{
-    font-size: 1.5em;
-}
-*/
-
-/* ESTA PARTE ES DE REM UNITS
-p{
-    font-size: 1rem;
-} */
-
-
-/*ESTA PARTE ES DE VH-VW  MIN-MAX W-H
-main{
-    width: 100vw;
-    height: 100vh;
-    background-color:gainsboro;
-}
-
-section{
-    font-size: 1.6rem;
-    width: 80%;
-    min-width: 320px;  /*con este limitamos su encogimiento
-    max-width: 500px; /*con este limitamos su estiramiento
-    min-height: 300px;
-    background-color:white;
-    margin: 0 auto;
-
-}
-*/
-
-/* POSITION - absolut,relative,fixed,static,sticky
-
-.contenedor{
-    display: inline-block;
-
-}
-
-.caja-sup{
-background-color: greenyellow;
-border-radius: 2rem;
-display: inline-block;
-height: 10rem;
-width: 30rem;
-position: absolute;
-left: 34rem;
-top: 3rem;
-}
-
-h1{text-align: center;
-   color: ivory;
-   margin-top: 3.8rem;
-   font-family: Helvetica, sans-serif;
-}
-
-.caja-inf{
-    background-color:green;
-    border-radius: 1rem;
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 50rem;
-    width: 50rem;
-    margin-left: 24rem;
-    font-size: 1.6rem;
-}
-
-div p{
-    margin-top: 23rem;
-    padding: 0 4rem;
-    text-align: justify;
-}
-
-*/
-
-/*BLOCK - INLINE & INLINE BLOCK ELEMENTS
-.block{
-    background-color: crimson;
-}
-
-.line{
-    background-color: cyan;
-}
-*/
-
-/*PRIMERA PAGINA BIEN HECHA USANDO POSITION Y DISPLAY
-header{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: seagreen;
-    width: 100%;
-    height: 5rem;
-}
-
-nav h1{
-display: inline-block;
-position: absolute;
-left: 0;
-margin: 1.2rem 4rem;
-}
-
-header nav h1 a{
-    font-size: 2.5rem;
-    text-decoration: none;
-    list-style: none;
-    color:snow;
-}
-
-nav ul li a{
-    color: snow;
-    font-size: 1.6rem;
-    text-decoration: none;
-    list-style: none;
-}
-
-li a:hover{
-    color: yellow;
 }
 
 ul{
-    display: inline-block;
-    position: absolute;
-    right: 4rem;
+    padding-right: 6.5rem;
+    display: flex;
+    justify-content:flex-end;
+    flex: 5;
 }
 
 ul li{
-    margin: 1.6rem 1rem;
-    display: inline-block;
-}
-
-aside{
-    background-color: darkgreen;
-    display: inline-block;
-    width: 30%;
-    height: 55rem;
-}
-
-aside > div{
-    border-radius: .5rem;
-    color:indigo;
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    display: inline-block;
-    background-color:mediumaquamarine;
-    padding: 4.4rem 0;
-    margin: 1.3rem 0;
-    position: relative;
-    left: 13%;
-    width: 70%;
-    height: 20%;
-}
-
-main{
-    background-color:lightgreen;
-    display: inline-block;
+    margin: 0 2.5rem;
     font-family: Helvetica, sans-serif;
-    width: 70%;
-    height: 55rem;
-    position: absolute;
+    font-size: 1.4rem;
+    list-style: none;
 }
 
-main div{
-    display: inline-block;
+li a{
+    color: black;
+    text-decoration: none;
 }
 
-main h2{
-    text-align: center;
-    font-size: 6rem;
+li a:hover{
+    color: deeppink;
 }
 
-main div p{
-    text-align: justify;
-    font-size: 2rem;
+.landing{
+    background-color: lightgreen;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 15rem ;
+    width: 100%;
+
 }
 
-main div:first-child{
-    margin: 5rem 8rem;
+.context{
+    border: black solid 1px;
+    width: 40rem;
+    height: 40rem;
+
 }
 
-main div:last-child{
-    padding: 2rem 8rem;
+
+.contvid{
+    border: black solid 1px;
+    width: 40rem;
+    height: 40rem;
+
+}
+
+.barrinf{display: flex;
+    justify-content: center;
+    background-color: lightgreen;
+    width: 100%;
+}
+
+.icons{
+    border: black solid 1px;
+    width: 20rem;
+    height: 10rem;
+}
+
+article{
+    background-color: blue;
+    width: 100%;
+    height: 60rem;
 }
 
 footer{
-    background-color: mediumturquoise;
-    font-family: Helvetica, sans-serif;
+    background-color:crimson;
     width: 100%;
-    height: 6.3rem;
+    height: 20rem;
 }
-
-footer div{
-    font-size: 1.8rem;
-    text-align: center;
-    padding: 2.1rem;
-}
-*/
-
-/*DISPLAY:FLEX Y SUS CARACTERISTICAS COMO 
-    FLEX:WRAP, JUSTIFY-CONTEN, FLEX-WRAP, ALIGN-ITEMS, FLEX-DIRECTION,ALIGN-SELF
-
-.container{
-    border: .3rem solid black;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    
-}
-
-.box{
-    width: 10rem;
-    height: 10rem;
-}
-
-.box1{
-    background-color: mediumorchid;
-}
-
-.box2{
-    background-color:midnightblue;
-    }
-
-.box3{
-    background-color:orangered;
-    }
-
-.box4{
-    background-color:royalblue;
-    }
-
-.box5{
-    background-color:yellowgreen;
-    }
-
-.box6{
-    background-color:slategrey;
-}
-*/
-
-/*MAS DISPLAY:FLEX
-.container{
-    border: .3rem solid black;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    
-}
-
-.container2{
-    width: 100%
-    display: flex;
-    justify-content: stretch;
-    flex-wrap: wrap;
-
-
-}
-
-.box{
-    width: 10rem;
-    height: 10rem;
-}
-
-.box1{
-    background-color: mediumorchid;
-}
-
-.box2{
-    background-color:midnightblue;
-    }
-
-.box3{
-    background-color:orangered;
-    }
-
-.box4{
-    background-color:royalblue;
-    }
-
-.box5{
-    background-color:yellowgreen;
-    }
-
-.box6{
-    background-color:slategrey;
-}*/
-
-/*DISPLAY:FLEX MAS FLEX-WRAP, JUSTIFY CONTENT,ALIGN-ITEMS,FLEX-GROW Y FLEX BASIS
-main{
-    border: black solid 1px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.box{
-    width: 10rem;
-    height: 10rem;
-    flex-basis: 10rem;
-    flex-grow: 1;
- 
-}
-
-.box1{
-    background-color: blue;
-}
-
-.box2{
-    background-color: brown;
-}
-
-.box3{
-    background-color: chartreuse;
-}
-
-.box4{
-    background-color: darkcyan;
-}
-
-.box5{
-    background-color: darkred;
-}
-
-.box6{
-    background-color:orange;
-}*/
-
