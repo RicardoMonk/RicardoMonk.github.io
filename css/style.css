@@ -1,5 +1,9 @@
 /*estos 3 elementos son super importantes ya que formatean
 las caracteristicas del navegador*/
+:root{
+    
+}
+
 *{
     box-sizing: border-box;
     padding: 0%;
