@@ -1,5 +1,12 @@
 /*estos 3 elementos son super importantes ya que formatean
 las caracteristicas del navegador*/
+
+:root{
+    --primary-color: teal;
+    --secundary-color: tomato;
+    --font-base: 2rem;
+}
+
 *{
     box-sizing: border-box;
     padding: 0%;
@@ -11,7 +18,6 @@ html{
 }
 body{
     font-size: 1.6rem;
-
 }
 
 
@@ -444,6 +450,7 @@ main{
     background-color:orange;
 }*/
 
+/*PRUEBAS WEB DISPLAY:FLEX MAS FLEX-WRAP, JUSTIFY CONTENT,ALIGN-ITEMS,FLEX-GROW Y FLEX BASIS
 header{
     position: fixed;
     z-index: 100;
@@ -549,5 +556,32 @@ aside > div{
     .imagenejemplo{
         margin-bottom: 10rem;
     }
-    
+
+}*/
+
+
+/*VARIABLES :root{--nombre;} / font: var(--nombre)
+header{
+    background-color: var(--primary-color);
+    width: 100vw;
+    height: 12rem;
 }
+
+main{
+    width: 100vw;
+    height: 70vh;
+}
+
+h1{
+    font-size: var(--font-base);
+    color: var(--secundary-color);
+
+}
+
+footer{
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--secundary-color);
+}*/
+
+
