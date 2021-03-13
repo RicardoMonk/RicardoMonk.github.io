@@ -602,3 +602,76 @@ main > div{
 .dosfont{
     font-family: 'Roboto Mono', monospace;
 }*/
+
+/*MOSTLY FLUID con @media (){}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+
+    width: 100%;
+    min-width: 150px;
+    height: 15rem;
+}
+
+.c1{
+    background-color:#f39189;
+}
+
+.c2{
+    background-color: #bb8082;
+}
+
+.c3{
+    background-color: #6e7582;
+}
+
+.c4{
+    background-color: #046582;
+}
+
+.c5{
+    background-color: #28527a;
+}
+
+.c6{
+    background-color: #8ac4d0;
+}
+
+@media (min-width:600px){
+    .c2, .c3 {
+        width: 50%;
+    }
+
+    .c4{
+        width: 100%;
+    }
+}
+
+@media (min-width:800px){
+    .container{
+        width: 800px;
+        margin: auto auto;
+    }
+
+    .c2{
+        width:30.3%;
+        flex-grow: 1;
+        flex-basis: 1;
+    }
+
+    .c3{
+        width:30.3%;
+        flex-grow: 1;
+        flex-basis: 1;
+    }
+    .c4{
+        width:30.3%;
+        flex-grow: 1;
+        flex-basis: 1;
+    }
+}*/
+
+
