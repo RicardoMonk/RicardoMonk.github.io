@@ -1,10 +1,25 @@
 /*estos 3 elementos son super importantes ya que formatean
 las caracteristicas del navegador*/
 
+/*
+1. Posicionamiento
+2. Modelo de caja
+3. Tipografia
+4. Visuales
+5. Otros
+*/
+
 :root{
-    --primary-color: teal;
-    --secundary-color: tomato;
-    --font-base: 2rem;
+/*Colores*/
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201E1c;
+    --black: #282623;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --just-white: #fff;
 }
 
 *{
@@ -15,11 +30,8 @@ las caracteristicas del navegador*/
 
 html{
     font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
 }
-body{
-    font-size: 1.6rem;
-}
-
 
 
 /*ESTILOS DE LAS PSEUDOCLASES.
