@@ -845,4 +845,125 @@ img{
     width: 100%;
 }*/
 
+/*
+header{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+header img{
+    width: 150px;
+    height: 24px;
+    margin-bottom: px;
+    align-self: center;
+} 
+
+.header--title-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 10px;
+    text-align: center;
+    align-self: center;
+}
+
+.header--title-container h1{
+    margin-top: 25px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1.1;
+    color: var(--just-white);
+}
+
+.header--title-container p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8;
+    color: var(--soft-orange);
+}*/
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+.header--title-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 800px;
+    height: 218px;
+    text-align: center;
+    flex-direction: column;
+    align-self: center;
+}
+
+header img{
+    text-align: center;
+    margin: 3rem 0;
+    width: 150px;
+    height: 24px;
+    align-self: center;
+
+}
+header div h1{
+    font-weight: bold;
+    line-height: 1.1;
+    font-size: 2.6rem;
+    color: var(--just-white);
+
+}
+
+header div p{
+    font-size: 1.4rem;
+    color: var(--soft-orange);
+    margin-top: 4rem;
+}
+
+.header--button{
+    position: absolute;
+    left: calc(50% - 118px);
+    align-self: center;
+    display: block;
+    font-size:1.4rem;
+    color: var(--warm-black);
+    background-color: #FAF8F7;
+    width: 229px;
+    height: 48px;
+    padding: 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    left: calc(50% - 118);
+    margin-top: 50px;
+}
+
+header div a{
+    text-decoration: none;
+}
+
+.header--button span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('../imgs/icons/arrowdown.svg');
+}
 
