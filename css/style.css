@@ -891,6 +891,8 @@ header img{
     color: var(--soft-orange);
 }*/
 
+
+/* SEGUNDAS PROPIEDADES 
 header{
     position: relative;
     display: flex;
@@ -965,5 +967,78 @@ header div a{
     height: 8px;
     margin-left: 10px;
     background-image: url('../imgs/icons/arrowdown.svg');
+}*/
+
+header{
+    position:relative;
+    width: 100%;
+    min-width: 320px;
+    height: 33.5rem;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
+
+header img{
+    align-self: center;
+    width: 170px;
+    height: auto;
+}
+
+header .header--title-container{
+    width: 80%;
+    min-width: 320px;
+    max-width: 800px;
+    height: 230px;
+    flex-direction: column;
+    align-self: center;
+    align-content: center;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.3rem;
+    line-height: 2.8rem;
+}
+
+header div h1{
+    color: var(--just-white);
+}
+
+header .header--title-container > p{
+    padding-top: 3.2rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    color: var(--soft-orange);
+}
+
+header div .header--button{
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 250px;
+    height: 55px;
+    padding-top: 13px;
+    border-radius: 4px;
+    background-color: var(--just-white);
+    text-decoration: none;
+    color: var(--warm-black);
+    font-weight: bold;
+    font-size: 1.6rem;
+    align-self: center;
+    left: calc(50% - 118px);
+    top: 270px;
+    margin-top: 45px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.19);
+}
+
+.header--button span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('../imgs/icons/arrowdown.svg');
+}
+
 
