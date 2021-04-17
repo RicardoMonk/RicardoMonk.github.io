@@ -1,5 +1,31 @@
-/*estos 3 elementos son super importantes ya que formatean
-las caracteristicas del navegador*/
+/*1-Edicion de la barra de navegacion*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: rgba(0,0,0,0);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--quaternary-color);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var(--tertiary-color);
+}
+/*1*/
+
+/*2-Cambio de color de la seleccion*/
+*::selection {
+    background-color: var(--quaternary-color);
+    color: var(--tertiary-color);
+}
+ 
+*::-moz-selection {
+    background-color:var(--quaternary-color);
+    color:var(--tertiary-color);
+}
+/*2*/
 
 :root{
     --primary-color: #3b4a6b;
@@ -8,11 +34,13 @@ las caracteristicas del navegador*/
     --quaternary-color: #f23557;
 }
 
+/*3-estos 3 elementos son super importantes ya que formatean las caracteristicas del navegador*/
 *{
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
 }
+/*3*/
 
 html{
     font-size: 62.5%;
@@ -20,17 +48,23 @@ html{
 }
 body{
     font-size: 1.6rem;
+    /**/overflow-x:hidden;
+    background-color: rgb(247, 247, 247);
 }
 
 header{
     display: flex;
     position: fixed;
+    right: 0;
+    left: 0;
     z-index: 100;
     width: 100%;
+    min-width: 320px;
     height: 8rem;
     background-color: var(--primary-color);
     justify-content: center;
     align-items: center;
+    /**/overflow-x:hidden;
 }
 
 nav{
@@ -114,11 +148,12 @@ nav{
     min-width: 100%;
     min-height: 100%;
     position: fixed;
+    right: 0;
     top: 0px;
     left: 0px;
     opacity: 0;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 30px;
     visibility: hidden;
     transition: all 300ms ease; 
 }
@@ -126,7 +161,7 @@ nav{
 #menu.show{
     opacity: 1;
     visibility: visible;
-    padding-top: 100px;
+    padding-top: 130px;
     background: rgba(0,0,0,0.9);
 }
 
@@ -162,20 +197,39 @@ nav{
 .nav-logo{
     width: 6rem;
     height: 6rem;
-    border: white solid 1px;
+    /*border: white solid 1px;*/
+    background-image: url(../imgs/rweb.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /*cursor: pointer;*/
 }
 
 .nav-btn-love{
     width: 6rem;
-    height: 6rem;
-    border: white solid 1px;
+    height: auto;
+    /*border: white solid 1px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.corazon{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-image: url(../imgs/corazon.svg);
+
+    /*text-shadow: 30px 30px;*/
 }
 
 main{
-    /*overflow:hidden;*/
+    /**/overflow:hidden;
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     min-width: 320px;
     height: auto;
 }
@@ -183,6 +237,7 @@ main{
 main .main-one-landing{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -207,7 +262,7 @@ main .main-one-landing{
     justify-content: center;
     align-items: center;
     line-height: 4.8rem;
-    letter-spacing: .5rem;
+    
 }
 
 .main-name > h3{
@@ -219,18 +274,25 @@ main .main-one-landing{
 
 .main-anim{
     border: var(--secundary-color) solid 1px;
-    width: 91%;
+    width: 80%;
     height: 200px;
     margin: 0 auto;
     margin-top: 1.4rem;
     justify-content: center;
 }
 
-.main-name p:first-of-type{
+.main-wel{
+    width: 80%;
+    max-width: 413px;
+    height: auto;
+
+}
+
+.main-wel p:first-of-type{
     margin-top: 3rem;
 }
 
-.main-name > P{
+.main-wel > P{
     text-align:justify;
     font-family: sans-serif;
 }
@@ -279,5 +341,212 @@ footer{
     width: 80%;
     height: 3rem;
     border: var(--primary-color) solid 1px;
-    
 }
+
+.footer-redes .icon{
+    position: relative;
+    display: inline-block;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    border: var(--primary-color) solid 1px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+@media (min-width:768px){
+
+    main .main-one-landing{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-top: 10rem;
+    }
+
+    .main-name{
+        margin-top: -19rem;
+        padding-top: 0rem;
+        padding-left: 6.5rem;
+        width: 50%;
+        max-width: 410px;
+        height: auto;
+        text-align: justify;
+    }
+
+    .main-name > h1{
+        text-align: center;
+        font-family: Helvetica, sans-serif;
+    
+        font-size: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 7rem;
+        
+    }
+
+    .main-anim{
+        border: var(--secundary-color) solid 1px;
+        width: 34%;
+        height: 350px;
+        margin: 0 30px;
+        margin-right: 7rem;
+        margin-top: 1.4rem;
+        justify-content: center;
+    }
+
+    .main-wel{
+        position: relative;
+        display: block;
+        width: 41%;
+        max-width: 300px;
+        height: auto;
+        justify-content:left;
+        left: auto;
+        right: 20.5%;
+        top:-100%;
+        margin-top: -18rem;
+    }
+
+    /*.main-wel{
+        position: relative;
+        display: block;
+        width: 31%;
+        max-width: 300px;
+        height: auto;
+        justify-content:left;
+        left: auto;
+        right: 28%;
+        top:-100%;
+        margin-top: -33rem;
+    }*/
+
+    .main-wel p:first-of-type{
+        margin-top: 2.4rem;
+    }
+
+}
+
+@media (min-width:1024px){
+
+    main{
+        /**/overflow:hidden;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 320px;
+        max-width: 1300px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    main .main-one-landing{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-top: 10rem;
+        margin-bottom: 18rem;
+    }
+
+    .main-name{
+        margin-top: -19rem;
+        padding-top: 0rem;
+        padding-left: 8rem;
+        width: 40%;
+        max-width: 410px;
+        height: auto;
+        text-align: justify;
+        margin-bottom: -3rem;
+    }
+
+    .main-name > h1{
+        text-align: center;
+        font-family: Helvetica, sans-serif;
+    
+        font-size: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 6.5rem;
+        letter-spacing: 0rem;
+    }
+
+    .main-anim{
+        border: var(--secundary-color) solid 1px;
+        
+        width: 50%;
+        height: 550px;
+        margin-left: px;
+        margin-right: 0;
+        margin-top: 1.4rem;
+        justify-content:right;
+    }
+
+    .main-wel{
+        position: relative;
+        display: block;
+        width: 31%;
+        max-width: 335px;
+        height: auto;
+        justify-content:left;
+        left: auto;
+        right: 26.5%;
+        top:-100%;
+        margin-top: -35rem;
+    }
+
+
+    /*.main-wel{
+        position: relative;
+        display: block;
+        width: 31%;
+        max-width: 300px;
+        height: auto;
+        justify-content:left;
+        left: auto;
+        right: 21%;
+        top:-100%;
+        margin-top: -18rem;
+    }*/
+    
+    .main-wel > P{
+        text-align:justify;
+        font-family: sans-serif;
+    }
+    
+    main section div h2{
+        font-size: 2rem;
+        font-family:monospace;
+        margin-top: 1rem;
+        letter-spacing: 20px;
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    .main-wel p:first-of-type{
+        margin-top: 2.4rem;
+    }
+
+    footer{
+        padding-top: 4rem ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        min-width: 320px;
+        height: 620px;
+        margin-top: 4rem;
+        background-color: var(--tertiary-color);
+    }
+    
+
+}
+
