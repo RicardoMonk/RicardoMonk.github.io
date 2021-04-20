@@ -260,6 +260,7 @@ main .main-one-landing{
     width: 100%;
     height: auto;
     margin-top: 8rem;
+    margin-bottom: 4rem;
 }
 
 .main-name{
@@ -322,6 +323,79 @@ main section div h2{
     text-align: center;
     margin-left: 20px;
 }
+
+main .main-two-landing{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-color);
+}
+
+section .ux{
+    text-align: center;
+    align-self: center;
+    width: 80%;
+    height: auto;
+    color: white;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+    font-family: Helvetica, sans-serif;
+    border: var(--tertiary-color) solid 1px;
+}
+
+.ux h4{
+    font-size: 4rem;
+}
+
+section .imgux{
+    align-self: center;
+    width: 80%;
+    height: 25rem;
+    border: var(--tertiary-color) solid 1px;
+    color: white;
+}
+
+section .textux{
+    align-self: center;
+    width: 80%;
+    height: auto;
+    border: var(--tertiary-color) solid 1px;
+    color: white;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    line-height: 1.5rem;
+    font-family: Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.btn-ver{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 50px;
+    background-color: var(--tertiary-color);
+    border-radius: 100px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 3rem;
+}
+
+section > a{
+    text-decoration: none;
+}
+
+.fa-arrow-right{
+    padding-left: 1rem;
+}
+
+
 
 footer{
     padding-top: 8rem ;
