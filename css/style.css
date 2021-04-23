@@ -379,12 +379,19 @@ section .textux{
     align-items: center;
     width: 240px;
     height: 50px;
-    background-color: var(--tertiary-color);
+    color: var(--tertiary-color);
+    border: var(--tertiary-color) solid 3px;
     border-radius: 100px;
     text-align: center;
     font-size: 1.8rem;
     font-family: Helvetica, sans-serif;
     margin-bottom: 3rem;
+}
+
+.btn-ver:hover{
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    transition: .5s;
 }
 
 section > a{
@@ -394,6 +401,93 @@ section > a{
 .fa-arrow-right{
     padding-left: 1rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main .main-three-landing{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: var(--quaternary-color);
+}
+
+section .anima{
+    text-align: center;
+    align-self: center;
+    width: 80%;
+    height: auto;
+    color: white;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+    font-family: Helvetica, sans-serif;
+    border: var(--tertiary-color) solid 1px;
+}
+
+.anima h5{
+    font-size: 4rem;
+}
+
+section .imation{
+    align-self: center;
+    width: 80%;
+    height: 25rem;
+    border: var(--tertiary-color) solid 1px;
+    color: white;
+}
+
+section .textion{
+    align-self: center;
+    width: 80%;
+    height: auto;
+    border: var(--tertiary-color) solid 1px;
+    color: white;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    line-height: 1.5rem;
+    font-family: Helvetica, sans-serif;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
