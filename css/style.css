@@ -15,7 +15,7 @@
 }
 /*1*/
 
-/*2-Cambio de color de la seleccion*/
+/*2-Cambio de color de la seleccion de texto*/
 *::selection {
     background-color: var(--quaternary-color);
     color: var(--tertiary-color);
@@ -152,7 +152,7 @@ nav{
     min-width: 100%;
     min-height: 100%;
     position: fixed;
-    right: 0;
+    right: 0px;
     top: 0px;
     left: 0px;
     opacity: 0;
@@ -212,7 +212,7 @@ nav{
 
 .nav-btn-love{
     width: 6rem;
-    height: auto;
+    height: 8rem; /*antes auto, ahora 8rem y por considerar*/
     /*border: white solid 1px;*/
     display: flex;
     justify-content: center;
@@ -352,6 +352,24 @@ section .ux{
     font-size: 4rem;
 }
 
+.animux{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.mostrarArriba{
+    animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba{
+    0%{
+        transform: translateY(60px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
 section .imgux{
     align-self: center;
     width: 80%;
@@ -401,25 +419,6 @@ section > a{
 .fa-arrow-right{
     padding-left: 1rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 main .main-three-landing{
     display: flex;
@@ -474,6 +473,62 @@ section .textion{
 
 
 
+
+
+
+
+
+
+
+
+main .main-four-landing{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: rgb(44, 44, 44);
+}
+
+section .blog{
+    text-align: center;
+    align-self: center;
+    width: 80%;
+    height: auto;
+    color: white;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+    font-family: Helvetica, sans-serif;
+    border: var(--tertiary-color) solid 1px;
+}
+
+.blog h6{
+    font-size: 4rem;
+}
+
+section .imablog{
+    align-self: center;
+    width: 80%;
+    height: 25rem;
+    border: var(--tertiary-color) solid 1px;
+    color: white;
+}
+
+section .texblog{
+    align-self: center;
+    width: 80%;
+    height: auto;
+    border: var(--tertiary-color) solid 1px;
+    color: white;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    line-height: 1.5rem;
+    font-family: Helvetica, sans-serif;
+    text-align: justify;
+}
 
 
 
