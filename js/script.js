@@ -7,6 +7,28 @@ burgerMenu.addEventListener('click', function(){
     show.classList.toggle("show");
 })
 
+/*Efecto contador de click*/
+function incrementButton(){
+    var element = document.getElementById('incrementText');
+    var value = element.innerHTML;
+
+    ++value;
+
+    console.log(value);
+    document.getElementById('incrementText').innerHTML = value;
+
+}
+
+/*Aparicion del Efecto contador de click
+
+document.getElementById("btn1").addEventListener("click",function(){
+    var box1=document.getElementById("incrementText");
+    if(box1.style.display=="none"){
+        box1.style.display="block";
+    }
+})
+No se logró que al ingresar a la web el objeto estilado estubiera con display none posterior a este codigo display block(luego lo revisamos)*/
+
 /*Efecto de textos animados*/
 let animux = document.querySelectorAll(".animux");
 

@@ -215,13 +215,14 @@ nav{
     height: 8rem; /*antes auto, ahora 8rem y por considerar*/
     /*border: white solid 1px;*/
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 5px;
 }
 
 .fa-heart{
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     cursor: pointer;
     color: var(--tertiary-color);
 }
@@ -230,6 +231,26 @@ nav{
     color: rgb(249, 252, 117);
     cursor: pointer;
     transition: 0.5s;
+}
+
+.button{
+    transition-duration: 0.4s;
+    background-color: var(--primary-color);
+    border-style: none;
+}
+
+#incrementText{
+    position: absolute;
+    top: 12px;
+    margin-left: 39px;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--quaternary-color);
+    border-radius: 20px;
+    padding: 3px 3px;
+    text-align: center;
 }
 
 /*con esta declaracion estilamos la linea 38 de html para que salga la imagen de corazon
@@ -342,10 +363,9 @@ section .ux{
     height: auto;
     color: white;
     padding-top: 4rem;
-    padding-bottom: 2rem;
+    padding-bottom: 2.8rem;
     line-height: 1.5rem;
     font-family: Helvetica, sans-serif;
-    border: var(--tertiary-color) solid 1px;
 }
 
 .ux h4{
@@ -379,16 +399,24 @@ section .imgux{
 }
 
 section .textux{
-    align-self: center;
+   
     width: 80%;
     height: auto;
-    border: var(--tertiary-color) solid 1px;
     color: white;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     font-family: Helvetica, sans-serif;
     text-align: justify;
+}
+
+.main-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-top: 2.5;
 }
 
 .btn-ver{
@@ -403,7 +431,7 @@ section .textux{
     text-align: center;
     font-size: 1.8rem;
     font-family: Helvetica, sans-serif;
-    margin-bottom: 3rem;
+    margin-top: 2.5rem;
 }
 
 .btn-ver:hover{
@@ -412,7 +440,7 @@ section .textux{
     transition: .5s;
 }
 
-section > a{
+section div a{
     text-decoration: none;
 }
 
@@ -438,10 +466,10 @@ section .anima{
     height: auto;
     color: white;
     padding-top: 4rem;
-    padding-bottom: 2rem;
-    line-height: 1.5rem;
+    padding-bottom: 3.5rem;
+    line-height: 1rem;
     font-family: Helvetica, sans-serif;
-    border: var(--tertiary-color) solid 1px;
+    order: 1;
 }
 
 .anima h5{
@@ -454,19 +482,20 @@ section .imation{
     height: 25rem;
     border: var(--tertiary-color) solid 1px;
     color: white;
+    order: 2;
 }
 
 section .textion{
     align-self: center;
     width: 80%;
     height: auto;
-    border: var(--tertiary-color) solid 1px;
     color: white;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     font-family: Helvetica, sans-serif;
     text-align: justify;
+    order: 3;
 }
 
 
@@ -499,10 +528,9 @@ section .blog{
     height: auto;
     color: white;
     padding-top: 4rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3.5rem;
     line-height: 1.5rem;
     font-family: Helvetica, sans-serif;
-    border: var(--tertiary-color) solid 1px;
 }
 
 .blog h6{
@@ -521,11 +549,10 @@ section .texblog{
     align-self: center;
     width: 80%;
     height: auto;
-    border: var(--tertiary-color) solid 1px;
     color: white;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     font-family: Helvetica, sans-serif;
     text-align: justify;
 }
@@ -554,7 +581,7 @@ footer{
     width: 100%;
     min-width: 320px;
     height: 480px;
-    margin-top: 4rem;
+
     background-color: var(--tertiary-color);
 }
 
@@ -705,6 +732,246 @@ footer > div{
         margin-top: 2.4rem;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+    main .main-two-landing{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background-color: var(--primary-color);
+        padding-bottom: 6rem;
+    }
+    
+    section .ux{
+        text-align: center;
+        align-self: center;
+        width: 100%;
+        height: auto;
+        color: white;
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+        line-height: 2.5rem;
+        font-family: Helvetica, sans-serif;
+    }
+    
+    .ux h4{
+        font-size: 8rem;
+    }
+    
+    .animux{
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    
+    .mostrarArriba{
+        animation: mostrarArriba 1s;
+    }
+    
+    @keyframes mostrarArriba{
+        0%{
+            transform: translateY(60px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+    
+    section .imgux{
+        align-self: center;
+        width: 50%;
+        height: 25rem;
+        border: var(--tertiary-color) solid 1px;
+        color: white;
+    }
+    
+    section .textux{
+        align-self: center;
+        width: 50%;
+        max-width: 400px;
+        height: auto;
+        color: white;
+        padding: 2.5rem 4rem;
+        line-height: 1.5rem;
+        font-family: Helvetica, sans-serif;
+        text-align: justify;
+    }
+
+    .main-btn-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+    
+    }
+    
+    .btn-ver{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 240px;
+        height: 50px;
+        color: var(--tertiary-color);
+        border: var(--tertiary-color) solid 3px;
+        border-radius: 100px;
+        text-align: center;
+        font-size: 1.8rem;
+        font-family: Helvetica, sans-serif;
+        margin-bottom: 3rem;
+    }
+    
+    .btn-ver:hover{
+        color: var(--primary-color);
+        background-color: var(--tertiary-color);
+        transition: .5s;
+    }
+    
+    section > a{
+        text-decoration: none;
+    }
+    
+    .fa-arrow-right{
+        padding-left: 1rem;
+    }
+
+
+
+
+
+
+
+
+
+    main .main-three-landing{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background-color: var(--quaternary-color);
+        padding-bottom: 6rem;
+    }
+    
+    section .anima{
+        text-align: center;
+        align-self: center;
+        width: 80%;
+        height: auto;
+        color: white;
+        padding-top: 7rem;
+        margin-bottom: 3.5rem;
+        line-height: 1.5rem;
+        font-family: Helvetica, sans-serif;
+    }
+    
+    .anima h5{
+        font-size: 6rem;
+    }
+    
+    section .imation{
+        align-self: center;
+        width: 50%;
+        height: 25rem;
+        border: var(--tertiary-color) solid 1px;
+        color: white;
+        order: 3;
+    }
+    
+    section .textion{
+        align-self: center;
+        width: 50%;
+        max-width: 400px;
+        height: auto;
+        color: white;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        line-height: 1.5rem;
+        font-family: Helvetica, sans-serif;
+        text-align: justify;
+        padding: 2.5rem 4rem;
+        order: 2;
+    }
+
+
+
+
+
+
+
+    main .main-four-landing{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background-color: rgb(44, 44, 44);
+        padding-bottom: 6rem;
+    }
+    
+    section .blog{
+        text-align: center;
+        align-self: center;
+        width: 80%;
+        height: auto;
+        color: white;
+        padding-top: 7rem;
+        padding-bottom: 6.5rem;
+        line-height: 1.5rem;
+        font-family: Helvetica, sans-serif;
+    }
+    
+    .blog h6{
+        font-size: 6rem;
+    }
+    
+    section .imablog{
+        align-self: center;
+        width: 50%;
+        height: 25rem;
+        border: var(--tertiary-color) solid 1px;
+        color: white;
+    }
+    
+    section .texblog{
+        align-self: center;
+        width: 50%;
+        max-width: 400px;
+        height: auto;
+        color: white;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        line-height: 1.5rem;
+        font-family: Helvetica, sans-serif;
+        text-align: justify;
+        padding: 2.5rem 4rem;
+    }
+
+
+
+
+
+
+
+
+
 }
 
 @media (min-width:1024px){
@@ -728,8 +995,8 @@ footer > div{
         align-items: center;
         width: 100%;
         height: auto;
-        margin-top: 10rem;
-        margin-bottom: 18rem;
+        margin-top: 4.8rem;
+        margin-bottom: 5rem;
     }
 
     .main-name{
@@ -811,6 +1078,235 @@ footer > div{
         margin-top: 2.4rem;
     }
 
+
+
+
+
+    main .main-two-landing{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background-color: var(--primary-color);
+        padding-bottom: 11rem;
+    }
+    
+    section .ux{
+        text-align: center;
+        align-self: center;
+        width: 100%;
+        height: auto;
+        color: white;
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+        line-height: 2.5rem;
+        font-family: Helvetica, sans-serif;
+    }
+    
+    .ux h4{
+        font-size: 8rem;
+    }
+    
+    .animux{
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    
+    .mostrarArriba{
+        animation: mostrarArriba 1s;
+    }
+    
+    @keyframes mostrarArriba{
+        0%{
+            transform: translateY(60px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+    
+    section .imgux{
+        align-self: center;
+        width: 50%;
+        height: 35rem;
+        border: var(--tertiary-color) solid 1px;
+        color: white;
+    }
+    
+    section .textux{
+        align-self: center;
+        width: 50%;
+        height: auto;
+        color: white;
+        padding: 2.5rem 4rem;
+        line-height: 1.5rem;
+        font-family: Helvetica, sans-serif;
+        text-align: justify;
+    }
+
+    .main-btn-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+    
+    }
+    
+    .btn-ver{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 240px;
+        height: 50px;
+        color: var(--tertiary-color);
+        border: var(--tertiary-color) solid 3px;
+        border-radius: 100px;
+        text-align: center;
+        font-size: 1.8rem;
+        font-family: Helvetica, sans-serif;
+        margin-bottom: 3rem;
+    }
+    
+    .btn-ver:hover{
+        color: var(--primary-color);
+        background-color: var(--tertiary-color);
+        transition: .5s;
+    }
+    
+    section > a{
+        text-decoration: none;
+    }
+    
+    .fa-arrow-right{
+        padding-left: 1rem;
+    }
+
+
+
+
+
+
+
+
+    main .main-three-landing{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background-color: var(--quaternary-color);
+        padding-bottom: 11rem;
+    }
+    
+    section .anima{
+        text-align: center;
+        align-self: center;
+        width: 80%;
+        height: auto;
+        color: white;
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+        line-height: 1.5rem;
+        font-family: Helvetica, sans-serif;
+    }
+    
+    .anima h5{
+        font-size: 6rem;
+    }
+    
+    section .imation{
+        align-self: center;
+        width: 50%;
+        height: 35rem;
+        border: var(--tertiary-color) solid 1px;
+        color: white;
+        order: 3;
+    }
+    
+    section .textion{
+        align-self: center;
+        width: 50%;
+        height: auto;
+
+        color: white;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        line-height: 1.5rem;
+        font-family: Helvetica, sans-serif;
+        text-align: justify;
+        padding: 2.5rem 4rem;
+        order: 2;
+    }
+
+
+
+
+
+
+
+    main .main-four-landing{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background-color: rgb(44, 44, 44);
+        padding-bottom:11rem;
+    }
+    
+    section .blog{
+        text-align: center;
+        align-self: center;
+        width: 80%;
+        height: auto;
+        color: white;
+        padding-top: 10rem;
+        padding-bottom: 8rem;
+        line-height: 1.5rem;
+        font-family: Helvetica, sans-serif;
+    }
+    
+    .blog h6{
+        font-size: 6rem;
+    }
+    
+    section .imablog{
+        align-self: center;
+        width: 50%;
+        height: 35rem;
+        border: var(--tertiary-color) solid 1px;
+        color: white;
+    }
+    
+    section .texblog{
+        align-self: center;
+        width: 50%;
+        height: auto;
+        color: white;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        line-height: 1.5rem;
+        font-family: Helvetica, sans-serif;
+        text-align: justify;
+        padding: 2.5rem 4rem;
+    }
+
+
+
+
+
+
+
+
     footer{
         padding-top: 4rem ;
         display: flex;
@@ -818,8 +1314,8 @@ footer > div{
         justify-content: space-around;
         width: 100%;
         min-width: 320px;
-        height: 620px;
-        margin-top: 4rem;
+        height: 550px;
+
         background-color: var(--tertiary-color);
     }
     
