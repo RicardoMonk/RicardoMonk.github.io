@@ -1,0 +1,1015 @@
+/*1-Edicion de la barra de navegacion*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: rgba(0,0,0,0);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--quaternary-color);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var(--tertiary-color);
+}
+/*1*/
+
+/*2-Cambio de color de la seleccion de texto*/
+*::selection {
+    background-color: var(--quaternary-color);
+    color: var(--tertiary-color);
+}
+ 
+*::-moz-selection {
+    background-color:var(--quaternary-color);
+    color:var(--tertiary-color);
+}
+/*2*/
+
+:root{
+    --primary-color: #3b4a6b;
+    --secundary-color: #22b2da;
+    --tertiary-color: #f0d43a;
+    --quaternary-color: #f23557;
+}
+
+/*3-estos 3 elementos son super importantes ya que formatean las caracteristicas del navegador*/
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+/*3*/
+
+html{
+    font-size: 62.5%;
+
+}
+body{
+    font-size: 1.6rem;
+    /**/overflow-x:hidden;
+    background-color: rgb(247, 247, 247);
+}
+
+header{
+    display: flex;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    min-width: 320px;
+    height: 8rem;
+    background-color: var(--primary-color);
+  /*background: rgba(255,255,255,0.2);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    backdrop-filter: blur(11px);
+    border-bottom: 1px solid rgba(255,255,255,0.25);*/
+    justify-content: center;
+    align-items: center;
+    /**/overflow-x:hidden;
+}
+
+nav{
+    display: flex;
+    width: 80%;
+    height: 80%;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
+#burger-menu{
+    width: 27px;
+    height: 27px;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+#burger-menu span,
+#burger-menu span:before,
+#burger-menu span:after{
+    background: white;
+    display: block;
+    height: 4px;
+    position: absolute;
+    
+    transition: all 300ms ease;
+}
+
+#burger-menu span:before,
+#burger-menu span:after{
+    content: '';
+}
+
+#burger-menu span{
+    right: 0px;
+    top: 13px;
+    width: 27px;
+}
+
+#burger-menu span:before{
+    left: 0px;
+    top: -10px;
+    width: 27px;
+}
+
+#burger-menu span:after{
+    left: 0px;
+    top: 10px;
+    width: 27px;
+}
+
+#burger-menu.close span{
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+    background: red;
+}
+
+
+#burger-menu.close span:before{
+    top: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+    background: red;
+}
+
+#burger-menu.close span:after{
+    top: 0px;
+    left: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+    opacity: 0;
+}
+
+
+#menu{
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    text-align: center;
+    padding-top: 30px;
+    visibility: hidden;
+    transition: all 300ms ease; 
+}
+
+#menu.show{
+    opacity: 1;
+    visibility: visible;
+    padding-top: 130px;
+    background: rgba(0,0,0,0.9);
+}
+
+#menu li{
+    font-family: Helvetica, sans-serif;
+    list-style: none;
+    position: relative;
+    width: 300px;
+    margin: auto;
+}
+
+#menu li:hover{
+    letter-spacing: 4px;
+}
+
+#menu li a{
+    color: white;
+    display: block;
+    font-size: 3.2rem;
+    text-decoration: none;
+    margin-bottom: 30px;
+    position: relative;
+    transition: all 300ms;
+    
+}
+
+#menu li a:hover:before{
+    opacity: 1;
+    transform: scale(1);
+
+}
+
+.nav-logo{
+    width: 6rem;
+    height: 6rem;
+    /*border: white solid 1px;*/
+    background-image: url(../imgs/rweb.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /*cursor: pointer;*/
+}
+
+.nav-btn-love{
+    width: 6rem;
+    height: 8rem; /*antes auto, ahora 8rem y por considerar*/
+    /*border: white solid 1px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.fa-heart{
+    font-size: 3.8rem;
+    cursor: pointer;
+    color: var(--tertiary-color);
+}
+
+.fa-heart:hover{
+    color: rgb(249, 252, 117);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button{
+    transition-duration: 0.4s;
+    background-color: var(--primary-color);
+    border-style: none;
+}
+
+#incrementText{
+    position: absolute;
+    top: 12px;
+    margin-left: 39px;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--quaternary-color);
+    border-radius: 20px;
+    padding: 3px 3px;
+    text-align: center;
+}
+
+/*con esta declaracion estilamos la linea 38 de html para que salga la imagen de corazon
+.corazon{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-image: url(../imgs/corazon.svg);
+
+    /*text-shadow: 30px 30px;
+}*/
+
+
+footer{
+    padding-top: 8rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 480px;
+
+    background-color: var(--tertiary-color);
+}
+
+footer > div{
+    margin: 2rem auto;
+}
+
+.footer-info{
+    align-self: center;
+    width: 200px;
+    min-width: 200px;
+    max-width: 525px;
+    height: 3rem;
+    border: var(--primary-color) solid 1px;
+    margin-top: 1rem;
+}
+
+.footer-logo{
+    align-self: center;
+    width: 80%;
+    height: 13rem;
+    border: var(--primary-color) solid 1px;
+    margin-top: 3rem;
+}
+
+.footer-redes{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+
+    margin-top: 5rem;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    /*border: var(--primary-color) solid 1px;*/
+}
+
+.footer-redes .icon{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.fab{
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--primary-color);
+
+}
+
+.fab:hover{
+    cursor: pointer;
+    color: var(--quaternary-color);
+}
+
+.footer-power{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 200px;
+    min-width: 200px;
+    max-width: 525px;
+    height: auto;
+    margin-bottom: 2rem;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+@media (min-width:768px){
+
+    main .main-one-landing{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-top: 10rem;
+    }
+
+    .main-name{
+        margin-top: -19rem;
+        padding-top: 0rem;
+        padding-left: 6.5rem;
+        width: 50%;
+        max-width: 410px;
+        height: auto;
+        text-align: justify;
+    }
+
+    .main-name > h1{
+        text-align: center;
+        font-family: Helvetica, sans-serif;
+    
+        font-size: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 7rem;
+        
+    }
+
+    .main-anim{
+        border: var(--secundary-color) solid 1px;
+        width: 34%;
+        height: 350px;
+        margin: 0 30px;
+        margin-right: 7rem;
+        margin-top: 1.4rem;
+        justify-content: center;
+    }
+
+    .main-wel{
+        position: relative;
+        display: block;
+        width: 41%;
+        max-width: 300px;
+        height: auto;
+        justify-content:left;
+        left: auto;
+        right: 20.5%;
+        top:-100%;
+        margin-top: -18rem;
+    }
+
+    /*.main-wel{
+        position: relative;
+        display: block;
+        width: 31%;
+        max-width: 300px;
+        height: auto;
+        justify-content:left;
+        left: auto;
+        right: 28%;
+        top:-100%;
+        margin-top: -33rem;
+    }*/
+
+    .main-wel p:first-of-type{
+        margin-top: 2.4rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    main .main-two-landing{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background-color: var(--primary-color);
+        padding-bottom: 6rem;
+    }
+    
+    section .ux{
+        text-align: center;
+        align-self: center;
+        width: 100%;
+        height: auto;
+        color: white;
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+        line-height: 2.5rem;
+        font-family: Helvetica, sans-serif;
+    }
+    
+    .ux h4{
+        font-size: 8rem;
+    }
+    
+    .animux{
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    
+    .mostrarArriba{
+        animation: mostrarArriba 1s;
+    }
+    
+    @keyframes mostrarArriba{
+        0%{
+            transform: translateY(60px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+    
+    section .imgux{
+        align-self: center;
+        width: 50%;
+        height: 25rem;
+        border: var(--tertiary-color) solid 1px;
+        color: white;
+    }
+    
+    section .textux{
+        align-self: center;
+        width: 50%;
+        max-width: 400px;
+        height: auto;
+        color: white;
+        padding: 2.5rem 4rem;
+        line-height: 1.5rem;
+        font-family: Helvetica, sans-serif;
+        text-align: justify;
+    }
+
+    .main-btn-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+    
+    }
+    
+    .btn-ver{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 240px;
+        height: 50px;
+        color: var(--tertiary-color);
+        border: var(--tertiary-color) solid 3px;
+        border-radius: 100px;
+        text-align: center;
+        font-size: 1.8rem;
+        font-family: Helvetica, sans-serif;
+        margin-bottom: 3rem;
+    }
+    
+    .btn-ver:hover{
+        color: var(--primary-color);
+        background-color: var(--tertiary-color);
+        transition: .5s;
+    }
+    
+    section > a{
+        text-decoration: none;
+    }
+    
+    .fa-arrow-right{
+        padding-left: 1rem;
+    }
+
+
+
+
+
+
+
+
+
+    main .main-three-landing{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background-color: var(--quaternary-color);
+        padding-bottom: 6rem;
+    }
+    
+    section .anima{
+        text-align: center;
+        align-self: center;
+        width: 80%;
+        height: auto;
+        color: white;
+        padding-top: 7rem;
+        margin-bottom: 3.5rem;
+        line-height: 1.5rem;
+        font-family: Helvetica, sans-serif;
+    }
+    
+    .anima h5{
+        font-size: 6rem;
+    }
+    
+    section .imation{
+        align-self: center;
+        width: 50%;
+        height: 25rem;
+        border: var(--tertiary-color) solid 1px;
+        color: white;
+        order: 3;
+    }
+    
+    section .textion{
+        align-self: center;
+        width: 50%;
+        max-width: 400px;
+        height: auto;
+        color: white;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        line-height: 1.5rem;
+        font-family: Helvetica, sans-serif;
+        text-align: justify;
+        padding: 2.5rem 4rem;
+        order: 2;
+    }
+
+
+
+
+
+
+
+    main .main-four-landing{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background-color: rgb(44, 44, 44);
+        padding-bottom: 6rem;
+    }
+    
+    section .blog{
+        text-align: center;
+        align-self: center;
+        width: 80%;
+        height: auto;
+        color: white;
+        padding-top: 7rem;
+        padding-bottom: 6.5rem;
+        line-height: 1.5rem;
+        font-family: Helvetica, sans-serif;
+    }
+    
+    .blog h6{
+        font-size: 6rem;
+    }
+    
+    section .imablog{
+        align-self: center;
+        width: 50%;
+        height: 25rem;
+        border: var(--tertiary-color) solid 1px;
+        color: white;
+    }
+    
+    section .texblog{
+        align-self: center;
+        width: 50%;
+        max-width: 400px;
+        height: auto;
+        color: white;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        line-height: 1.5rem;
+        font-family: Helvetica, sans-serif;
+        text-align: justify;
+        padding: 2.5rem 4rem;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+@media (min-width:1024px){
+
+    main{
+        /**/overflow:hidden;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 320px;
+        max-width: 1300px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    main .main-one-landing{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-top: 4.8rem;
+        margin-bottom: 5rem;
+    }
+
+    .main-name{
+        margin-top: -19rem;
+        padding-top: 0rem;
+        padding-left: 8rem;
+        width: 40%;
+        max-width: 410px;
+        height: auto;
+        text-align: justify;
+        margin-bottom: -3rem;
+    }
+
+    .main-name > h1{
+        text-align: center;
+        font-family: Helvetica, sans-serif;
+    
+        font-size: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 6.5rem;
+        letter-spacing: 0rem;
+    }
+
+    .main-anim{
+        border: var(--secundary-color) solid 1px;
+        
+        width: 50%;
+        height: 550px;
+        margin-left: px;
+        margin-right: 0;
+        margin-top: 1.4rem;
+        justify-content:right;
+    }
+
+    .main-wel{
+        position: relative;
+        display: block;
+        width: 31%;
+        max-width: 335px;
+        height: auto;
+        justify-content:left;
+        left: auto;
+        right: 26.5%;
+        top:-100%;
+        margin-top: -35rem;
+    }
+
+
+    /*.main-wel{
+        position: relative;
+        display: block;
+        width: 31%;
+        max-width: 300px;
+        height: auto;
+        justify-content:left;
+        left: auto;
+        right: 21%;
+        top:-100%;
+        margin-top: -18rem;
+    }*/
+    
+    .main-wel > P{
+        text-align:justify;
+        font-family: sans-serif;
+    }
+    
+    main section div h2{
+        font-size: 2rem;
+        font-family:monospace;
+        margin-top: 1rem;
+        letter-spacing: 20px;
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    .main-wel p:first-of-type{
+        margin-top: 2.4rem;
+    }
+
+
+
+
+
+    main .main-two-landing{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background-color: var(--primary-color);
+        padding-bottom: 11rem;
+    }
+    
+    section .ux{
+        text-align: center;
+        align-self: center;
+        width: 100%;
+        height: auto;
+        color: white;
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+        line-height: 2.5rem;
+        font-family: Helvetica, sans-serif;
+    }
+    
+    .ux h4{
+        font-size: 8rem;
+    }
+    
+    .animux{
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    
+    .mostrarArriba{
+        animation: mostrarArriba 1s;
+    }
+    
+    @keyframes mostrarArriba{
+        0%{
+            transform: translateY(60px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+    
+    section .imgux{
+        align-self: center;
+        width: 50%;
+        height: 35rem;
+        border: var(--tertiary-color) solid 1px;
+        color: white;
+    }
+    
+    section .textux{
+        align-self: center;
+        width: 50%;
+        height: auto;
+        color: white;
+        padding: 2.5rem 4rem;
+        line-height: 1.5rem;
+        font-family: Helvetica, sans-serif;
+        text-align: justify;
+    }
+
+    .main-btn-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+    
+    }
+    
+    .btn-ver{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 240px;
+        height: 50px;
+        color: var(--tertiary-color);
+        border: var(--tertiary-color) solid 3px;
+        border-radius: 100px;
+        text-align: center;
+        font-size: 1.8rem;
+        font-family: Helvetica, sans-serif;
+        margin-bottom: 3rem;
+    }
+    
+    .btn-ver:hover{
+        color: var(--primary-color);
+        background-color: var(--tertiary-color);
+        transition: .5s;
+    }
+    
+    section > a{
+        text-decoration: none;
+    }
+    
+    .fa-arrow-right{
+        padding-left: 1rem;
+    }
+
+
+
+
+
+
+
+
+    main .main-three-landing{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background-color: var(--quaternary-color);
+        padding-bottom: 11rem;
+    }
+    
+    section .anima{
+        text-align: center;
+        align-self: center;
+        width: 80%;
+        height: auto;
+        color: white;
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+        line-height: 1.5rem;
+        font-family: Helvetica, sans-serif;
+    }
+    
+    .anima h5{
+        font-size: 6rem;
+    }
+    
+    section .imation{
+        align-self: center;
+        width: 50%;
+        height: 35rem;
+        border: var(--tertiary-color) solid 1px;
+        color: white;
+        order: 3;
+    }
+    
+    section .textion{
+        align-self: center;
+        width: 50%;
+        height: auto;
+
+        color: white;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        line-height: 1.5rem;
+        font-family: Helvetica, sans-serif;
+        text-align: justify;
+        padding: 2.5rem 4rem;
+        order: 2;
+    }
+
+
+
+
+
+
+
+    main .main-four-landing{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background-color: rgb(44, 44, 44);
+        padding-bottom:11rem;
+    }
+    
+    section .blog{
+        text-align: center;
+        align-self: center;
+        width: 80%;
+        height: auto;
+        color: white;
+        padding-top: 10rem;
+        padding-bottom: 8rem;
+        line-height: 1.5rem;
+        font-family: Helvetica, sans-serif;
+    }
+    
+    .blog h6{
+        font-size: 6rem;
+    }
+    
+    section .imablog{
+        align-self: center;
+        width: 50%;
+        height: 35rem;
+        border: var(--tertiary-color) solid 1px;
+        color: white;
+    }
+    
+    section .texblog{
+        align-self: center;
+        width: 50%;
+        height: auto;
+        color: white;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        line-height: 1.5rem;
+        font-family: Helvetica, sans-serif;
+        text-align: justify;
+        padding: 2.5rem 4rem;
+    }
+
+
+
+
+
+
+
+
+    footer{
+        padding-top: 4rem ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        min-width: 320px;
+        height: 550px;
+
+        background-color: var(--tertiary-color);
+    }
+    
+
+}
+
