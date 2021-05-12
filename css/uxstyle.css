@@ -264,6 +264,80 @@ nav{
 }*/
 
 
+
+
+/*---------C O N T E N I D O-----------*/
+
+.main-container{
+    width: 100%;
+    height: auto;
+    background-color: #e7c3c9;
+    padding-top: 7.5rem;
+    border: var(--quaternary-color) solid 1px;
+}
+
+.main-container-one{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border: var(--quaternary-color) solid 1px;
+    background-color: #f199a7 ;
+}
+
+.main-container-img{
+    align-self: center;
+    width: 100%;
+    height: 20rem;
+    background-color: var(--primary-color);
+}
+
+.main-container-text_box{
+    width: 80%;
+    text-align: center;
+    align-self: center;
+    margin-top: -4.6rem;
+    margin-bottom: 3rem;
+    font-family: Helvetica, sans-serif;
+    color: white;
+}
+
+.main-container-text_box h1{
+    font-size: 5rem;
+}
+
+.main-container-moduls{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: var(--quaternary-color) solid 1px;
+}
+
+.uno{
+    width: 100%;
+    height: 20rem;
+    border: var(--quaternary-color) solid 1px;
+}
+.dos{
+    width: 100%;
+    height: 20rem;
+    border: var(--quaternary-color) solid 1px;
+}
+
+.tres{
+    width: 100%;
+    height: 20rem;
+    border: var(--quaternary-color) solid 1px;
+}
+
+.cuatro{
+    width: 100%;
+    height: 20rem;
+    border: var(--quaternary-color) solid 1px;
+}
+
+/*---------C O N T E N I D O-----------*/
 footer{
     padding-top: 8rem ;
     display: flex;
@@ -348,322 +422,99 @@ footer > div{
     text-align: center;
 }
 
+
+
+
+
+
+
+
 @media (min-width:768px){
 
-    main .main-one-landing{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content:space-around;
-        align-items: center;
+
+    .main-container{
         width: 100%;
         height: auto;
-        margin-top: 10rem;
+        background-color: #e7c3c9;
+        padding-top: 7.5rem;
+        border: var(--quaternary-color) solid 1px;
     }
-
-    .main-name{
-        margin-top: -19rem;
-        padding-top: 0rem;
-        padding-left: 6.5rem;
-        width: 50%;
-        max-width: 410px;
-        height: auto;
-        text-align: justify;
-    }
-
-    .main-name > h1{
-        text-align: center;
-        font-family: Helvetica, sans-serif;
     
-        font-size: 8rem;
+    .main-container-one{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        line-height: 7rem;
-        
-    }
-
-    .main-anim{
-        border: var(--secundary-color) solid 1px;
-        width: 34%;
-        height: 350px;
-        margin: 0 30px;
-        margin-right: 7rem;
-        margin-top: 1.4rem;
-        justify-content: center;
-    }
-
-    .main-wel{
-        position: relative;
-        display: block;
-        width: 41%;
-        max-width: 300px;
-        height: auto;
-        justify-content:left;
-        left: auto;
-        right: 20.5%;
-        top:-100%;
-        margin-top: -18rem;
-    }
-
-    /*.main-wel{
-        position: relative;
-        display: block;
-        width: 31%;
-        max-width: 300px;
-        height: auto;
-        justify-content:left;
-        left: auto;
-        right: 28%;
-        top:-100%;
-        margin-top: -33rem;
-    }*/
-
-    .main-wel p:first-of-type{
-        margin-top: 2.4rem;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-    main .main-two-landing{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
         width: 100%;
         height: auto;
-        background-color: var(--primary-color);
-        padding-bottom: 6rem;
+        border: var(--quaternary-color) solid 1px;
+        background-color: #f199a7 ;
     }
     
-    section .ux{
-        text-align: center;
+    .main-container-img{
         align-self: center;
         width: 100%;
-        height: auto;
-        color: white;
-        padding-top: 8rem;
-        padding-bottom: 4rem;
-        line-height: 2.5rem;
-        font-family: Helvetica, sans-serif;
+        height: 20rem;
+        border: #f23557 solid 1px;
+        background-color: #fa5d77;
     }
     
-    .ux h4{
-        font-size: 8rem;
-    }
-    
-    .animux{
-        opacity: 0;
-        transition: all 0.5s;
-    }
-    
-    .mostrarArriba{
-        animation: mostrarArriba 1s;
-    }
-    
-    @keyframes mostrarArriba{
-        0%{
-            transform: translateY(60px);
-        }
-        100%{
-            transform: translateY(0);
-        }
-    }
-    
-    section .imgux{
-        align-self: center;
-        width: 50%;
-        height: 25rem;
-        border: var(--tertiary-color) solid 1px;
-        color: white;
-    }
-    
-    section .textux{
-        align-self: center;
-        width: 50%;
-        max-width: 400px;
-        height: auto;
-        color: white;
-        padding: 2.5rem 4rem;
-        line-height: 1.5rem;
-        font-family: Helvetica, sans-serif;
-        text-align: justify;
-    }
-
-    .main-btn-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        height: auto;
-    
-    }
-    
-    .btn-ver{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 240px;
-        height: 50px;
-        color: var(--tertiary-color);
-        border: var(--tertiary-color) solid 3px;
-        border-radius: 100px;
+    .main-container-text_box{
+        width: 80%;
         text-align: center;
-        font-size: 1.8rem;
-        font-family: Helvetica, sans-serif;
+        align-self: center;
+        margin-top: -4.6rem;
         margin-bottom: 3rem;
+        font-family: Helvetica, sans-serif;
+        color: white;
     }
     
-    .btn-ver:hover{
-        color: var(--primary-color);
-        background-color: var(--tertiary-color);
-        transition: .5s;
+    .main-container-text_box h1{
+        font-size: 5rem;
     }
     
-    section > a{
-        text-decoration: none;
-    }
-    
-    .fa-arrow-right{
-        padding-left: 1rem;
-    }
-
-
-
-
-
-
-
-
-
-    main .main-three-landing{
+    .main-container-moduls{
         display: flex;
+        align-self: center;
         flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
         width: 100%;
+        max-width: 120rem;
         height: auto;
-        background-color: var(--quaternary-color);
-        padding-bottom: 6rem;
-    }
-    
-    section .anima{
-        text-align: center;
-        align-self: center;
-        width: 80%;
-        height: auto;
-        color: white;
-        padding-top: 7rem;
-        margin-bottom: 3.5rem;
-        line-height: 1.5rem;
-        font-family: Helvetica, sans-serif;
-    }
-    
-    .anima h5{
-        font-size: 6rem;
-    }
-    
-    section .imation{
-        align-self: center;
-        width: 50%;
-        height: 25rem;
-        border: var(--tertiary-color) solid 1px;
-        color: white;
-        order: 3;
-    }
-    
-    section .textion{
-        align-self: center;
-        width: 50%;
-        max-width: 400px;
-        height: auto;
-        color: white;
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
-        line-height: 1.5rem;
-        font-family: Helvetica, sans-serif;
-        text-align: justify;
-        padding: 2.5rem 4rem;
-        order: 2;
-    }
-
-
-
-
-
-
-
-    main .main-four-landing{
-        display: flex;
-        flex-wrap: wrap;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        background-color: rgb(44, 44, 44);
-        padding-bottom: 6rem;
+        border: var(--quaternary-color) solid 1px;
     }
     
-    section .blog{
-        text-align: center;
-        align-self: center;
-        width: 80%;
-        height: auto;
-        color: white;
-        padding-top: 7rem;
-        padding-bottom: 6.5rem;
-        line-height: 1.5rem;
-        font-family: Helvetica, sans-serif;
-    }
-    
-    .blog h6{
-        font-size: 6rem;
-    }
-    
-    section .imablog{
-        align-self: center;
+    .uno{
         width: 50%;
-        height: 25rem;
-        border: var(--tertiary-color) solid 1px;
-        color: white;
+        height: 20rem;
+        border: var(--quaternary-color) solid 1px;
+    }
+    .dos{
+        width: 50%;
+        height: 20rem;
+        border: var(--quaternary-color) solid 1px;
     }
     
-    section .texblog{
-        align-self: center;
+    .tres{
         width: 50%;
-        max-width: 400px;
-        height: auto;
-        color: white;
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
-        line-height: 1.5rem;
-        font-family: Helvetica, sans-serif;
-        text-align: justify;
-        padding: 2.5rem 4rem;
+        height: 20rem;
+        border: var(--quaternary-color) solid 1px;
     }
-
-
-
-
-
-
-
+    
+    .cuatro{
+        width: 50%;
+        height: 20rem;
+        border: var(--quaternary-color) solid 1px;
+    }
 
 
 }
+
+
+
+
+
+
+
+
 
 @media (min-width:1024px){
 
@@ -673,7 +524,7 @@ footer > div{
         flex-direction: column;
         width: 100%;
         min-width: 320px;
-        max-width: 1300px;
+        max-width: 2000px;
         height: auto;
         margin: 0 auto;
     }
